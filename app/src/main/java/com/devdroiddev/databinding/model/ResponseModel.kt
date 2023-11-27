@@ -2,8 +2,8 @@ package com.devdroiddev.databinding.model
 
 import com.google.gson.annotations.SerializedName
 
-data class DataModel(
+data class ResponseModel(
        @SerializedName("data")
-       val data : List<NewModel>
+       val data : List<User>
 
 )

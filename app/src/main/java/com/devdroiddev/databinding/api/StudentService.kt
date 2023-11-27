@@ -1,8 +1,8 @@
 package com.devdroiddev.databinding.api
 
-import com.devdroiddev.databinding.model.DataModel
-import com.devdroiddev.databinding.model.NewModel
-import com.devdroiddev.databinding.model.PostModel
+import com.devdroiddev.databinding.model.ResponseModel
+import com.devdroiddev.databinding.model.User
+import com.devdroiddev.databinding.model.UserInfo
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.Body
@@ -23,23 +23,24 @@ interface StudentService {
     suspend fun getStudentById(
         @Header("app-id") appId: String,
         @Path("id") id: String
-        ) : Response<NewModel>
+        ) : Response<User>
 
     @GET("user")
      suspend fun getALLStudent(
         @Query("page") page: Int,
         @Query("limit") limit: Int,
         @Header("app-id") appId: String
-    ) : Response<DataModel>
+    ) : Response<ResponseModel>
 
 
+     // Todo : User it later
     @POST("posts")
     fun sendUserData(
-        @Body postModel : PostModel
-    ) : Call<PostModel>
+        @Body userInfo : UserInfo
+    ) : Call<UserInfo>
 
 
-
+    // Todo : User it later
     @FormUrlEncoded
     @POST("posts")
     suspend fun pushPost(
@@ -47,5 +48,5 @@ interface StudentService {
         @Field("id") id: Int,
         @Field("title") title: String,
         @Field("body") body : String
-    ) : Response<PostModel>
+    ) : Response<UserInfo>
 }

@@ -1,6 +1,7 @@
 package com.devdroiddev.databinding.model
 
-data class PostModel(
+// TODO: Not used yet
+data class UserInfo(
     val userId : Int,
     val id : Int,
     val title : String,

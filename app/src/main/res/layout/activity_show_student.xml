@@ -6,14 +6,14 @@
     <data>
         <variable
             name="student"
-            type="com.devdroiddev.databinding.model.NewModel" />
+            type="com.devdroiddev.databinding.model.User" />
 
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activities.ShowStudentActivity"
+        tools:context=".activities.UserDetailActivity"
         android:padding="12dp"
         android:layout_margin="4dp">
 

@@ -1,8 +1,6 @@
 package com.devdroiddev.databinding.model
 
-import com.google.gson.annotations.SerializedName
-
-data class NewModel(
+data class User(
     val id : String?,
     val title: String?,
     val firstName : String?,

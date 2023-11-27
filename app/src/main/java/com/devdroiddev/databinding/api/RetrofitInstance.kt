@@ -1,6 +1,5 @@
 package com.devdroiddev.databinding.api
 
-import com.devdroiddev.databinding.utils.Constant.Companion.BASE_URL
 import com.devdroiddev.databinding.utils.Constant.Companion.BASE_URL_
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

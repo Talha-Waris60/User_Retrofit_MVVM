@@ -12,10 +12,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/student_list_row"
-            android:layout_above="@id/progress_bar"/>
+            android:layout_above="@id/bottom_progress_bar"/>
 
         <ProgressBar
-            android:id="@+id/progress_bar"
+            android:id="@+id/bottom_progress_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

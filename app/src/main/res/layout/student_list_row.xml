@@ -5,7 +5,7 @@
     <data>
         <variable
             name="studentModel"
-            type="com.devdroiddev.databinding.model.NewModel" />
+            type="com.devdroiddev.databinding.model.User" />
         
         <variable
             name="itemClickListener"

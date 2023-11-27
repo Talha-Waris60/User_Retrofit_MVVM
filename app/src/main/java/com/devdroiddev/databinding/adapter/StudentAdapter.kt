@@ -1,9 +1,7 @@
 package com.devdroiddev.databinding.adapter
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.*
@@ -11,17 +9,16 @@ import androidx.viewbinding.ViewBinding
 import com.devdroiddev.databinding.databinding.StudentListRowBinding
 import com.devdroiddev.databinding.databinding.StudentRowRightBinding
 import com.devdroiddev.databinding.interfaces.OnItemClickListener
-import com.devdroiddev.databinding.model.NewModel
-import java.security.PrivateKey
+import com.devdroiddev.databinding.model.User
 
 class StudentAdapter(
     private val context: Context,
-    private val studentRecordsList: MutableList<NewModel>,
-    private val itemClickListener: OnItemClickListener<NewModel>
+    private val studentRecordsList: MutableList<User>,
+    private val itemClickListener: OnItemClickListener<User>
 ) : RecyclerView.Adapter<StudentAdapter.MyViewHolder>()  {
 
 
-     private val VIEW_TYPE_FIRST = 1
+    private val VIEW_TYPE_FIRST = 1
     private val VIEW_TYPE_SECOND = 2
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
